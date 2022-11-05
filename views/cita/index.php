@@ -1,8 +1,8 @@
-<h1 class="nombre-pagina">Crear Nuevo Espacio De Tiempo</h1>
-<p class="descripcion-pagina">Elige tus servicios y coloca tus datos</p>
+<h1 class="nombre-pagina">Crear Nueva cita</h1>
+<p class="descripcion-pagina">Selecciona el servicio</p>
 
 <?php 
-    include_once __DIR__ . '/../templates/barra.php';
+include_once __DIR__ . '/../templates/barra.php';
 ?>
 
 <div id="app">
@@ -18,8 +18,8 @@
         <div id="servicios" class="listado-servicios"></div>
     </div>
     <div id="paso-2" class="seccion">
-        <h2>Tus Datos y Cita</h2>
-        <p class="text-center">Coloca tu espacio de tiempo</p>
+        <h2>Tus datos y cita</h2>
+        <p class="text-center">Coloca tus datos y fecha de la cita</p>
 
         <form class="formulario">
             <div class="campo">
@@ -27,18 +27,17 @@
                 <input
                     id="nombre"
                     type="text"
-                    placeholder="Tu Nombre"
+                    placeholder="Tu nombre"
                     value="<?php echo $nombre; ?>"
                     disabled
                 />
             </div>
-
             <div class="campo">
                 <label for="fecha">Fecha</label>
                 <input
                     id="fecha"
                     type="date"
-                    min="<?php echo date('Y-m-d', strtotime('+1 day') ); ?>"
+                    min="<?php echo date ('Y-m-d', strtotime('+1 day')) ?>"
                 />
             </div>
 
@@ -47,15 +46,15 @@
                 <input
                     id="hora"
                     type="time"
+                    step="30"
                 />
             </div>
-            <input type="hidden" id="id" value="<?php echo $id; ?>" >
-
+            <input type="hidden" id="id" value="<?php echo $id; ?>">
         </form>
     </div>
     <div id="paso-3" class="seccion contenido-resumen">
         <h2>Resumen</h2>
-        <p class="text-center">Verifica que la información sea correcta</p>
+        <p class="text-center">Verifica tus datos</p>
     </div>
 
     <div class="paginacion">

@@ -11,17 +11,17 @@
         <input
             type="email"
             id="email"
-            placeholder="Tu Email"
+            placeholder="Tu email"
             name="email"
         />
     </div>
 
     <div class="campo">
-        <label for="password">Password</label>
-        <input 
+        <label for="contraseña">Contraseña</label>
+        <input
             type="password"
-            id="password"
-            placeholder="Tu Password"
+            id="contraseña"
+            placeholder="Tu contraseña"
             name="password"
         />
     </div>
@@ -30,6 +30,6 @@
 </form>
 
 <div class="acciones">
-    <a href="/crear-cuenta">¿Aún no tienes una cuenta? Crear una</a>
-    <a href="/olvide">¿Olvidaste tu password?</a>
+    <a href="/crear-cuenta">Registrate</a>
+    <a href="/olvide">¿Olvidaste tu contraseña?</a>
 </div>
