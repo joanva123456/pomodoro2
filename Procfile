@@ -1,2 +1,2 @@
-web: proveedor/bin/heroku-php-apache2 public/ > Procfile
+web: proveedor/bin/heroku-php-apache2 public/
 
