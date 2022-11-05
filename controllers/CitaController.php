@@ -1,13 +1,10 @@
 <?php
 
 namespace Controllers;
-
 use MVC\Router;
 
-class CitaController {
-    public static function index( Router $router ) {
-
-        session_start();
+class CitaController{
+    public static function index(Router $router){
 
         isAuth();
 
@@ -15,5 +12,6 @@ class CitaController {
             'nombre' => $_SESSION['nombre'],
             'id' => $_SESSION['id']
         ]);
+
     }
 }
