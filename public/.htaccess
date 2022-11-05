@@ -20,6 +20,10 @@ RewriteRule ^ index.php [L]
 RewriteCond %{HTTP:Authorization} .
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-<Files 403.html>
-allow from all
-</Files>
+<IfModule dir_module>
+    DirectoryIndex index.html index.php
+</IfModule>
+
+#//<Files 403.html>
+#//allow from all
+#</Files>
