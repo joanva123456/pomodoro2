@@ -3,7 +3,6 @@
 namespace Model;
 
 class Cita extends ActiveRecord {
-    
     // Base de datos
     protected static $tabla = 'citas';
     protected static $columnasDB = ['id', 'fecha', 'hora', 'usuarioId'];
