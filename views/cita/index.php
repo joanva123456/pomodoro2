@@ -1,4 +1,4 @@
-<h1 class="nombre-pagina">Crear Nueva cita</h1>
+<h1 class="nombre-pagina">Tu Espacio</h1>
 <p class="descripcion-pagina">Selecciona el servicio</p>
 
 <?php 
@@ -8,8 +8,8 @@ include_once __DIR__ . '/../templates/barra.php';
 <div id="app">
     <nav class="tabs">
         <button class="actual" type="button" data-paso="1">Servicios</button>
-        <button type="button" data-paso="2">Información Cita</button>
-        <button type="button" data-paso="3">Resumen</button>
+        <button type="button" data-paso="2">Tu Tiempo</button>
+        <button type="button" data-paso="3">Estadisticas</button>
     </nav>
 
     <div id="paso-1" class="seccion">
@@ -18,8 +18,8 @@ include_once __DIR__ . '/../templates/barra.php';
         <div id="servicios" class="listado-servicios"></div>
     </div>
     <div id="paso-2" class="seccion">
-        <h2>Tus datos y cita</h2>
-        <p class="text-center">Coloca tus datos y fecha de la cita</p>
+        <h2>Tus datos y Tiempo</h2>
+        <p class="text-center">Coloca tus datos y fecha </p>
 
         <form class="formulario">
             <div class="campo">
