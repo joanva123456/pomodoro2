@@ -28,8 +28,8 @@ class Email {
          $mail->Username = '73302bd3e18fa7';
          $mail->Password = 'c68bb7f58d1ce0';
      
-         $mail->setFrom('joan@REST_API.com');
-         $mail->addAddress('joan@REST_API.com', 'REST_API.com');
+         $mail->setFrom('joan@appsalon.com');
+         $mail->addAddress('joan@appsalon.com', 'AppSalon.com');
          $mail->Subject = 'Confirma tu Cuenta';
 
          // Set HTML
