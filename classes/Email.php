@@ -28,8 +28,8 @@ class Email {
          $mail->Username = '73302bd3e18fa7';
          $mail->Password = 'c68bb7f58d1ce0';
      
-         $mail->setFrom('joan@appsalon.com');
-         $mail->addAddress('joan@appsalon.com', 'AppSalon.com');
+         $mail->setFrom('joan@REST_API.com');
+         $mail->addAddress('joan@REST_API.com', 'REST_API.com');
          $mail->Subject = 'Confirma tu Cuenta';
 
          // Set HTML
@@ -38,7 +38,7 @@ class Email {
 
          $contenido = '<html>';
          $contenido .= "<p><strong>Hola " . $this->email .  "</strong> Has Creado tu cuenta , solo debes confirmarla presionando el siguiente enlace</p>";
-         $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
+         $contenido .= "<p>Presiona aquí: <a href='https://desolate-stream-17713.herokuapp.com/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
          $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
          $contenido .= '</html>';
          $mail->Body = $contenido;
@@ -69,7 +69,7 @@ class Email {
 
         $contenido = '<html>';
         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
-        $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
+        $contenido .= "<p>Presiona aquí: <a href='https://desolate-stream-17713.herokuapp.com/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
         $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
         $contenido .= '</html>';
         $mail->Body = $contenido;
